@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body class="text-center">
+
+<br/><br/><br/><br/><br/>
+<h2><font face="futura" class="font-weight-bold">Log in</font></h2>
+<br/><br/>
+
+<%= form_for(:session, url: login_path) do |f| %>
+	<p size="10pt" face="futura" class="font-weight-bold">Email</p>
+	<%= f.text_field :email, class: 'col-sm-2' %>
+	<br/><br/>
+	<p size="10pt" face="futura" class="font-weight-bold">Password</p>
+	<%= f.password_field :password, class: 'col-sm-2' %>
+	<br/><br/>
+	<%= f.submit "Log in", class: 'btn btn-secondary btn-sm' %>
+<% end %>
+
+
+</body>
+
+</html>
