@@ -1,24 +1,36 @@
-# README
+## Ruby on Rails version
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby '2.5.1'
 
-Things you may want to cover:
+Rails '5.2.0'
 
-* Ruby version
 
-* System dependencies
+## Heroku : https://nasa-security.herokuapp.com/
 
-* Configuration
 
-* Database creation
+## Steps:
+```
+$ bundle install --without production
+```
+```
+$ rails db:migrate
+```
+```
+$ rails server
+```
 
-* Database initialization
+## Open your browser and launch
+```
+$ localhost:3000
+```
 
-* How to run the test suite
+## If it doesn't work
+```
+$ rails server -p 4567
+```
+## Launch
+```
+$ localhost:4567
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Louis Delestre / Jeremie De Gueltzl / Ridwan Baboolall
